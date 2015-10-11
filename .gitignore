@@ -1,0 +1,19 @@
+rget/
+
+# Eclipse
+/.project
+/.settings
+/.classpath
+/bin
+/.cache
+
+# IntelliJ Idea
+/.idea
+/.idea_modules
+jloc.iml
+
+.DS_Store
+
+/target
+/project/target
+
