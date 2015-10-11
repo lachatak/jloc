@@ -14,7 +14,7 @@ object FileCounterApp extends App {
     val files = filesByExtension(path, extension)
     val fileCount = files.size
     val lines = files.flatMap(Source.fromFile(_).getLines).map(_.trim)
-    val blank = lines.filter(_.trim.length == 0).size
+    val blank = lines.filter(_.length == 0).size
     val comment = lines.filter(commentFilter).size
     val code = lines.size - blank - comment
 
